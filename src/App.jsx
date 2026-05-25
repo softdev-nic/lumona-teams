@@ -16,7 +16,7 @@ import { useState,useEffect } from "react"
  import Message from "./components/Message"
  import { useNavigate } from "react-router-dom"
 import PopUp from "./components/Pop Up/PopUP"
- 
+import AcceptInvite from "./Pages/AcceptInvite"
 function App() {
   const [logged,setLogged] = useState(false)
   const location = useLocation();
@@ -39,6 +39,7 @@ function App() {
       <Route path="/" element={<TeamsHomePage/>}/>
       <Route path="/team-creation" element={<TeamCreation/>}/>
       <Route path="/register" element={<Register/>}/>
+      <Route path="/accept-invitation/:inviteToken" element={<AcceptInvite/>}/>
 
       
         
