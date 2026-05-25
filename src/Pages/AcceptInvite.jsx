@@ -16,8 +16,8 @@ function AcceptInvite() {
    }
   }, [inviteToken])
   return (
-    <div>
-      {loading?(<h1>Accepting Invite...</h1>):(<h1>Invite Accepted!</h1>)}
+    <div className='w-full h-full text-center'>
+      {loading?(<h1>Accepting Invite...</h1>):(<h1>Request waiting for approval...</h1>)}
     </div>
     
   )
