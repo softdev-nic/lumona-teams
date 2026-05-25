@@ -9,6 +9,8 @@ function AcceptInvite() {
   useEffect(() => {
    try{
     const response = API.post(`/api/accept-invite/${inviteToken}`)
+    setLoading(false)
+    console.log(response)
    } catch(error){
     console.error('Error accepting invite:', error)
    }
