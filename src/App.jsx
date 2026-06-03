@@ -5,7 +5,7 @@
  import Register from "./Pages/Register"
  import TeamsHomePage from "./Pages/TeamsHomePage"
 import { useState,useEffect } from "react"
-  
+import Canvas from "./components/Canvas"
  
  
   
@@ -40,6 +40,7 @@ function App() {
       <Route path="/team-creation" element={<TeamCreation/>}/>
       <Route path="/register" element={<Register/>}/>
       <Route path="/accept-invitation/:inviteToken" element={<AcceptInvite/>}/>
+      <Route path="/canvas" element={<Canvas/>}/>
 
       
         
