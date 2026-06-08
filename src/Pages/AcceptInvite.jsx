@@ -8,7 +8,7 @@ function AcceptInvite() {
   const [loading, setLoading] = useState(true)
   useEffect(() => {
    try{
-    const response = API.get( `/api/accept-invitation/${inviteToken}`)
+    const response = API.get(`/api/accept-invitation/${inviteToken}`)
     setLoading(false)
     console.log(response)
    } catch(error){

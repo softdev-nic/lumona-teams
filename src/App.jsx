@@ -6,7 +6,8 @@
  import TeamsHomePage from "./Pages/TeamsHomePage"
 import { useState,useEffect } from "react"
 import Canvas from "./components/Canvas"
- 
+ import Login from "./Pages/Login"
+ import Meets from "./services/Communication/Meets"
  
   
  import Logo from "./assets/LumonaLogo1.png"
@@ -41,6 +42,8 @@ function App() {
       <Route path="/register" element={<Register/>}/>
       <Route path="/accept-invitation/:inviteToken" element={<AcceptInvite/>}/>
       <Route path="/canvas" element={<Canvas/>}/>
+      <Route path="/login" element={<Login/>}/>
+      <Route path="/meets" element={<Meets/>}/>
 
       
         

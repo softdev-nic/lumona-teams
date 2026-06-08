@@ -4,6 +4,8 @@ import {create} from 'zustand';
 export const useStore = create((set,get) => ({
   Members:[],
   setMembers: (members) => set({Members: members}),
+  pebdingInvites: [],
+  setPendingInvites: (invites) => set({PendingInvites: invites}),
     nodes: [],
     setNodes: (nodes) => set({nodes}),
     edges: [],

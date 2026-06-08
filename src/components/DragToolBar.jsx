@@ -20,8 +20,7 @@ function DragToolBar() {
     ))}
      <div>
      <DraggableItem  />
-        {console.log(members)}
-    `  {console.log("mapping")}
+      
     
     </div>
     </div>

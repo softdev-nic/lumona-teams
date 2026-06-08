@@ -11,3 +11,13 @@ export const getMembers = async () => {
     console.error('Error fetching members:', error);
   }
 };
+export const getPendingInvites = async () => {
+  try {
+    const response = await API.get('/api/teams/getpendinginvites');
+    useStore.setState({ PendingInvites: response.data.invites });
+    console.log(useStore.getState().PendingInvites);
+    return response.data.invites;
+  } catch (error) {
+    console.error('Error fetching pending invites:', error);
+  }
+}
